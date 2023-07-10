@@ -15,7 +15,18 @@ beforeEach(()=>{
 })
 
 test('greeting message', ()=>{
-    
+    const messages = people.map(man=>`Hello ${man.name.split('')[0]}. Welcome`)
+
+    expect(messages.length).toBe(3)
+    expect(messages[0]).toBe("Hello Andrew. Welcome")
+    expect(messages[0]).toBe("Hello Alexander. Welcome")
+    expect(messages[0]).toBe("Hello Dmitry. Welcome")
+
+
+
+
 })
+
+
 
 
